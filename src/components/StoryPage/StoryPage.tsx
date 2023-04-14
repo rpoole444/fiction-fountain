@@ -21,8 +21,8 @@ const StoryPage: React.FC<StoryPageProps> = ({ prompt }) => {
           body: JSON.stringify({ prompt }),
         });
 
-
         const data = await response.json();
+        
 if (response.status !== 200) {
   console.error('Error generating story:', data);
   throw new Error(`Error generating story: ${data.error}`);
