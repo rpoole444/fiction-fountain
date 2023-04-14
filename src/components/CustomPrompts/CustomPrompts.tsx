@@ -14,7 +14,10 @@ const CustomPrompts: React.FC = () => {
     if (customPrompt.trim()) {
       // You can either save the custom prompt in a state management system or pass it directly to the StoryPage component
       console.log("Custom prompt:", customPrompt);
-      history.push('/story'); // Change the path if you need to pass the custom prompt directly to the StoryPage component
+      history.push({
+        pathname: '/story',
+        state: { prompt: customPrompt }
+      }); // Change the path if you need to pass the custom prompt directly to the StoryPage component
     }
   };
 
@@ -24,7 +27,9 @@ const CustomPrompts: React.FC = () => {
       <input
         type="text"
         value={customPrompt}
-        onChange={handleInputChange}
+        onChange={(e) => {
+          handleInputChange(e)
+        }}
         placeholder="Enter your custom prompt here"
       />
       <button onClick={handleSubmit}>

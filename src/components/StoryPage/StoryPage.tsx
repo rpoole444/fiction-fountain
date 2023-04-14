@@ -3,14 +3,16 @@ import { useHistory } from 'react-router-dom';
 import './StoryPage.css';
 
 interface StoryPageProps {
-  prompt: string; // Add this prop to receive the selected or custom prompt
+  prompt: string;
+  location: any;
 }
 
-const StoryPage: React.FC<StoryPageProps> = ({ prompt }) => {
+const StoryPage: React.FC<StoryPageProps> = ({ location }) => {
   const [story, setStory] = useState('');
   const history = useHistory();
 
   useEffect(() => {
+    console.log("HERE:", prompt)
     const generateStory = async () => {
       try {
         const response = await fetch('http://localhost:5001/generate-story', {
@@ -18,11 +20,11 @@ const StoryPage: React.FC<StoryPageProps> = ({ prompt }) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ prompt }),
+          body: JSON.stringify({ prompt: location.state?.prompt }),
         });
 
         const data = await response.json();
-        
+
 if (response.status !== 200) {
   console.error('Error generating story:', data);
   throw new Error(`Error generating story: ${data.error}`);
@@ -36,7 +38,7 @@ if (response.status !== 200) {
     };
 
     generateStory();
-  }, [prompt]);
+  }, [location]);
 
   const goBack = () => {
     history.goBack();
