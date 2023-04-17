@@ -52,7 +52,7 @@ if (response.status !== 200) {
           <p>{story}</p>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>One Moment, Bringing Your Story to Life...</p>
       )}
       <button onClick={goBack}>Go Back</button>
     </div>
