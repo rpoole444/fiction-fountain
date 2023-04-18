@@ -14,13 +14,16 @@ const ImagePage: React.FC<ImagePageProps> = ({ location }) => {
   useEffect(() => {
     const generateImage = async () => {
       try {
-        const response = await fetch("http://localhost:5001/generate-image", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ prompt: location.state?.prompt }),
-        });
+        const response = await fetch(
+          "https://fiction-fountain-be.vercel.app/generate-image",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ prompt: location.state?.prompt }),
+          }
+        );
 
         const data = await response.json();
 
