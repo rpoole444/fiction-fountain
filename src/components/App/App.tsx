@@ -6,6 +6,7 @@ import CustomPrompts from "../CustomPrompts/CustomPrompts";
 import StoryPage from "../StoryPage/StoryPage";
 import HistoryPage from "../HistoryPage/HistoryPage";
 import ImagePrompts from "../ImagePrompts/ImagePrompts";
+import ImagePage from "../ImagePage/ImagePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/custom-prompt" component={CustomPrompts} />
         <Route path="/story" component={StoryPage} />
         <Route path="/image-prompt" component={ImagePrompts} />
+        <Route path="/image" component={ImagePage} />
         <Route path="/history" component={HistoryPage} />
       </Switch>
     </main>

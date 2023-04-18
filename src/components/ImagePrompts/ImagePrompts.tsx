@@ -11,7 +11,7 @@ const ImagePrompts: React.FC = () => {
   };
 
   const handleSubmit = () => {
-    if (!imagePrompt.trim()) {
+    if (imagePrompt.trim()) {
       history.push({
         pathname: "/image",
         state: { prompt: imagePrompt },

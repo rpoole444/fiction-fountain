@@ -8,11 +8,6 @@ import Header from "../Header/Header";
 const HomePage: React.FC = () => {
   const history = useHistory();
 
-  const handlePromptClick = (prompt: string) => {
-    // You can either save the selected prompt in a state management system or pass it directly to the StoryPage component
-    console.log("Selected prompt:", prompt);
-  };
-
   const navigateToCustomPrompts = () => {
     history.push("/custom-prompt");
   };
@@ -36,10 +31,10 @@ const HomePage: React.FC = () => {
               Create your custom prompt
             </button>
           </section>
-          <img src={CoolBook} />
+          <img src={CoolBook} alt="book" />
         </section>
         <section className="image-generator-container">
-          <img src={CanvasImage} />
+          <img src={CanvasImage} alt="canvas" />
           <section>
             <h2>Image Generator</h2>
             <p>In addition to our Story Generator, Try our image generator!</p>
