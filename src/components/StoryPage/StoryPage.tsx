@@ -26,13 +26,13 @@ const StoryPage: React.FC<StoryPageProps> = ({ location }) => {
         const data = await response.json();
 
         if (response.status !== 200) {
-          console.error("Error generating story:", data);
+          // console.error("Error generating story:", data);
           throw new Error(`Error generating story: ${data.error}`);
         } else {
           setStory(data.story);
         }
       } catch (error) {
-        console.error("Error generating story:", error);
+        // console.error("Error generating story:", error);
       }
     };
 
