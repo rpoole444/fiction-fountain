@@ -20,7 +20,9 @@ const ImagePrompts: React.FC = () => {
       });
     }
   };
-
+  const goBack = () => {
+    history.goBack();
+  };
   return (
     <div className="CustomImagePrompts">
       <h1>Create Your Custom Image Prompt</h1>
@@ -33,6 +35,7 @@ const ImagePrompts: React.FC = () => {
         placeholder="Enter your custom image prompt here"
       />
       <button onClick={handleSubmit}>Generate Image</button>
+      <button onClick={goBack}>Go Back</button>
     </div>
   );
 };

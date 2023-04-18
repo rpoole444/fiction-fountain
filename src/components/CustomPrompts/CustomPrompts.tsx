@@ -20,7 +20,9 @@ const CustomPrompts: React.FC = () => {
       }); // Change the path if you need to pass the custom prompt directly to the StoryPage component
     }
   };
-
+  const goBack = () => {
+    history.goBack();
+  };
   return (
     <div className="CustomPrompts">
       <h1>Create Your Custom Story Prompt</h1>
@@ -33,6 +35,7 @@ const CustomPrompts: React.FC = () => {
         placeholder="Enter your custom prompt here"
       />
       <button onClick={handleSubmit}>Generate Story</button>
+      <button onClick={goBack}>Go Back</button>
     </div>
   );
 };
