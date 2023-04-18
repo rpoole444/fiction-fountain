@@ -17,6 +17,10 @@ const HomePage: React.FC = () => {
     history.push("/custom-prompt");
   };
 
+  const navigateToCustomImagePrompts = () => {
+    history.push("/image-prompt");
+  };
+
   return (
     <div className="full-homepage">
       <Header />
@@ -43,7 +47,7 @@ const HomePage: React.FC = () => {
               Give Our ai a prompt and see what fictional image is created for
               your enjoyment!
             </p>
-            <button onClick={navigateToCustomPrompts}>
+            <button onClick={navigateToCustomImagePrompts}>
               Create your custom prompt
             </button>
           </section>
