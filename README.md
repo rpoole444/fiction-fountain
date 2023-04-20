@@ -1,5 +1,5 @@
 <div align="center">
-<h1> Grant Guru </h1>
+<h1> Fiction Fountain </h1>
 </div>
   <p align="center">
     <a href="https://github.com/rpoole444/fiction-fountain-fe"><strong>Explore the docs »</strong></a>
@@ -7,7 +7,7 @@
     <br />
     <a href="https://github.com/rpoole444/fiction-fountain-fe/issues">Report Bug</a>
     ·
-    <a href="[https://github.com/grant-guru/grant-guru-fe/issues](https://github.com/rpoole444/fiction-fountain-fe/issues)">Request Feature</a>
+    <a href="[https://github.com/rpoole444/fiction-fountain-fe/issues](https://github.com/rpoole444/fiction-fountain-fe/issues)">Request Feature</a>
   </p>
 
 </div>
@@ -33,15 +33,14 @@
 
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 
-Grant Guru  is an application that allows a user to explore a database full of Scholarship and grant applications to Help students find fincial aid with ease!  On Load you can choose a profile or user to demo the site with, after your choice you are taken to a form with inputs where you will choose your search preference for the types of scholarships you are looking for.  Upon submition of the form, queries are sent to our backend where they filter the array of scholarships to fit the parameters and send us the filtered scholarships.  From there a user is able to scroll through the filtered scholarships.  A user is able to add and delete scholarships to and from their saved window.  If a user wishes to modify their search, simply direct yourself to the form and refill out the form for a modified search of the parameters. 
+Fiction Fountain is an application that allows a user to generate a Bedtime of Story-time Story based on a prompt directed to the Openai Chatbot, additionally users are able to generated a picture!  On Load you can choose to Generate a story or a picture, and then you are taken to a page with and input where you can add a prompt for the bot to generate a story.  Upon submition of the prompt you are taken to a screen to view the generated story or image. In the Future I plan to add authentication to the app as well as features to save stories/images/combinations, as well as add the feature to couple the image and story in one prompt submition.
 
-The app incorporates a responsive layout and will change its structure to fit both large and mobile displays. It was built using functional React Hooks, Typescript, controlled form pattern, React Router, Redux State Management. It uses End-To-End Testing using Cypress where fetch requests are stubbed with fixtures and sad paths are tested to ensure intended execution. 
+The app incorporates a responsive layout and will change its structure to fit both large and mobile displays. It was built using functional React Hooks, Typescript, controlled form pattern, React Router. 
 
-We built this over 3 days as part of Turing School of Software and Design's 4th quarter's Capstone project.
+This Is my personal project and plan to continue to develop it!
 
-I hope you have fun using Grant Guru!
+I hope you have fun using Fiction Fountain!
 
- 
   
 </div>
 
