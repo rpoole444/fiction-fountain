@@ -27,13 +27,13 @@
 
 </div>
 
-<div>
+<div align="center">
 
 ## Abstract:
 
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 
-  Fiction Fountain is an application that allows a user to generate a Bedtime of Story-time Story based on a prompt directed to the Openai Chatbot, additionally users are able to generated a picture!  On Load you can choose to Generate a story or a picture, and then you are taken to a page with and input where you can add a prompt for the bot to generate a story.  Upon submition of the prompt you are taken to a screen to view the generated story or image.
+  Fiction Fountain is an application that allows a user to generate a bedtime of story-time Story based on a prompt directed to the Openai Chatbot, additionally users are able to generated a picture!  On load you can choose to generate a story or a picture, and then you are taken to a page with an input where you can add a prompt for the bot to generate a story.  Upon submition of the prompt you are taken to a screen to view the generated story or image.
 
   The app incorporates a responsive layout and will change its structure to fit both large and mobile displays. It was built using functional React Hooks, Typescript, controlled form pattern, React Router. 
 
