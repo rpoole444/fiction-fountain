@@ -7,7 +7,7 @@
     <br />
     <a href="https://github.com/rpoole444/fiction-fountain-fe/issues">Report Bug</a>
     ·
-    <a href="[https://github.com/rpoole444/fiction-fountain-fe/issues](https://github.com/rpoole444/fiction-fountain-fe/issues)">Request Feature</a>
+    <a href="https://github.com/rpoole444/fiction-fountain-fe/issues">Request Feature</a>
   </p>
 
 </div>
