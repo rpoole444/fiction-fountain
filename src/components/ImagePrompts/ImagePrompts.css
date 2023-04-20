@@ -1,4 +1,4 @@
-.CustomPImagerompts {
+.CustomImagerompts {
   text-align: center;
   padding: 20px;
 }
@@ -43,4 +43,57 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(93, 108, 116);
   box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+}
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .CustomImagePrompts h1 {
+    font-size: 1.5rem;
+  }
+
+  .CustomImagePrompts input {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .CustomImagePrompts button {
+    font-size: 12px;
+    height: 32px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+  .CustomImagePrompts h1 {
+    font-size: 1.2rem;
+  }
+
+  .CustomImagePrompts input {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  .CustomImagePrompts button {
+    font-size: 10px;
+    height: 28px;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+/* iPhone devices */
+@media (max-width: 480px) {
+  .CustomImagePrompts h1 {
+    font-size: 1rem;
+  }
+
+  .CustomImagePrompts input {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+
+  .CustomImagePrompts button {
+    font-size: 9px;
+    height: 24px;
+    padding: 0.2rem 0.4rem;
+  }
 }

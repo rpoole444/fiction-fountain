@@ -81,6 +81,98 @@
 .story-generator-container img,
 .image-generator-container img {
   margin: 2vh;
-  height: 50vh;
+  height: 40vh;
+  max-width: 100%;
+  width: auto;
   border-radius: 70px;
+  object-fit: cover;
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .HomePage h1 {
+    font-size: 1.5rem;
+  }
+
+  .HomePage h2 {
+    font-size: 1.2rem;
+  }
+
+  .HomePage button {
+    font-size: 12px;
+    height: 32px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .story-generator-container img,
+  .image-generator-container img {
+    height: 25vh;
+    margin: 1vh;
+  }
+}
+
+@media (max-width: 620px) {
+  .story-generator-container img,
+  .image-generator-container img {
+    height: 20vh;
+    margin: 1vh;
+  }
+  .HomePage h1 {
+    font-size: 1.1rem;
+  }
+
+  .HomePage h2 {
+    font-size: 0.9rem;
+  }
+
+  .HomePage li {
+    font-size: 0.8rem;
+  }
+
+  .HomePage button {
+    font-size: 9px;
+    height: 26px;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .HomePage {
+    padding: 10px;
+  }
+}
+
+/* iPhone devices */
+@media (max-width: 480px) {
+  .HomePage {
+    padding: 10px;
+  }
+
+  .HomePage h1 {
+    font-size: 1.2rem;
+  }
+
+  .HomePage h2 {
+    font-size: 1rem;
+  }
+
+  .HomePage li {
+    font-size: 0.9rem;
+  }
+
+  .HomePage button {
+    font-size: 10px;
+    height: 28px;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .story-generator-container,
+  .image-generator-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-generator-container img,
+  .image-generator-container img {
+    height: 20vh;
+    margin: 1vh;
+  }
 }

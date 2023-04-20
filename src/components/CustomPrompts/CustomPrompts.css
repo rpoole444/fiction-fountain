@@ -44,3 +44,41 @@
   border: 1px solid rgb(93, 108, 116);
   box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
 }
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .CustomPrompts h1 {
+    font-size: 1.5rem;
+  }
+
+  .CustomPrompts input {
+    font-size: 0.9rem;
+  }
+
+  .CustomPrompts button {
+    font-size: 12px;
+    height: 32px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* iPhone devices */
+@media (max-width: 480px) {
+  .CustomPrompts {
+    padding: 10px;
+  }
+
+  .CustomPrompts h1 {
+    font-size: 1.2rem;
+  }
+
+  .CustomPrompts input {
+    font-size: 0.8rem;
+  }
+
+  .CustomPrompts button {
+    font-size: 10px;
+    height: 28px;
+    padding: 0.3rem 0.6rem;
+  }
+}
