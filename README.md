@@ -27,16 +27,18 @@
 
 </div>
 
-<div align="center">
+<div>
 
 ## Abstract:
 
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 
-Fiction Fountain is an application that allows a user to generate a Bedtime of Story-time Story based on a prompt directed to the Openai Chatbot, additionally users are able to generated a picture!  On Load you can choose to Generate a story or a picture, and then you are taken to a page with and input where you can add a prompt for the bot to generate a story.  Upon submition of the prompt you are taken to a screen to view the generated story or image. In the Future I plan to add authentication to the app as well as features to save stories/images/combinations, as well as add the feature to couple the image and story in one prompt submition.
+  Fiction Fountain is an application that allows a user to generate a Bedtime of Story-time Story based on a prompt directed to the Openai Chatbot, additionally users are able to generated a picture!  On Load you can choose to Generate a story or a picture, and then you are taken to a page with and input where you can add a prompt for the bot to generate a story.  Upon submition of the prompt you are taken to a screen to view the generated story or image.
 
-The app incorporates a responsive layout and will change its structure to fit both large and mobile displays. It was built using functional React Hooks, Typescript, controlled form pattern, React Router. 
+  The app incorporates a responsive layout and will change its structure to fit both large and mobile displays. It was built using functional React Hooks, Typescript, controlled form pattern, React Router. 
 
+  In the Future I plan to add authentication to the app as well as features to save stories/images/combinations, add the feature option to generate an image and story in one prompt submition.
+  
 This Is my personal project and plan to continue to develop it!
 
 I hope you have fun using Fiction Fountain!
