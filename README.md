@@ -82,7 +82,8 @@ I hope you have fun using Fiction Fountain!
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
 
-![Screenshot 2023-04-20 at 4 36 29 PM](https://user-images.githubusercontent.com/111818942/233493060-17a69326-c2ca-4121-a0bf-34d2f0970b59.png)
+<img width="1435" alt="fiction fountain" src="https://user-images.githubusercontent.com/111818942/234141767-d5cd7208-5cce-4d0a-8196-9615e3e497f0.png">
+
 
 
 ---
