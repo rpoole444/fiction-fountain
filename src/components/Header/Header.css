@@ -1,5 +1,19 @@
 .intro-container {
   border: 2px solid black;
-  max-height: 25vh;
+  /* Adjust or remove max-height as needed. */
+  max-height: 40vh;
+  position: relative; /* Add this line. */
+  z-index: 1000; /* Add this line. */
   background-color: rgba(128, 128, 128, 0.754);
+}
+
+.intro-container h1 {
+  color: rgb(0, 0, 0); /* Adjust color as needed. */
+  font-size: 2em; /* Adjust size as needed. */
+  /* Add more properties as needed to style the text. */
+}
+
+.intro-container p {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
 }

@@ -9,6 +9,7 @@ interface StoryPageProps {
 
 const StoryPage: React.FC<StoryPageProps> = ({ location }) => {
   const [story, setStory] = useState("");
+  const [storyImage, setStoryImage] = useState("");
   const history = useHistory();
 
   useEffect(() => {
@@ -35,9 +36,38 @@ const StoryPage: React.FC<StoryPageProps> = ({ location }) => {
           setStory(data.story);
         }
       } catch (error) {
-        // console.error("Error generating story:", error);
+        console.error("Error generating story:", error);
       }
     };
+
+    const generateStoryImage = async () => {
+      try {
+        const response = await fetch(
+          "https://fiction-fountain.herokuapp.com/generate-image",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ prompt: location?.state?.prompt, n: 2 }),
+          }
+        );
+
+        const data = await response.json();
+        console.log("HEEEEEREEEE:", data);
+        if (response.status !== 200) {
+          throw new Error("Error generating image:", data);
+        } else {
+          setStoryImage(data.image);
+        }
+      } catch (error) {
+        console.error("Error generating image:", error);
+      }
+    };
+
+    if (location.state?.customImage) {
+      generateStoryImage();
+    }
 
     generateStory();
   }, [location]);
@@ -55,6 +85,13 @@ const StoryPage: React.FC<StoryPageProps> = ({ location }) => {
         </div>
       ) : (
         <p>One Moment, Bringing Your Story to Life...</p>
+      )}
+      {storyImage ? (
+        <div className="image">
+          <img src={storyImage} alt="prompted" />
+        </div>
+      ) : (
+        <p>Enjoy Your Story!</p>
       )}
       <button onClick={goBack}>Go Back</button>
     </div>
